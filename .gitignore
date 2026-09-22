@@ -1,0 +1,8 @@
+*.exe
+*.msi
+*.zip
+*.iso
+*.evtx
+eicar*
+~$*
+.DS_Store

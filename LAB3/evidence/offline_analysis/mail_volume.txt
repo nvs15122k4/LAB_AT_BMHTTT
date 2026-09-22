@@ -1,0 +1,14 @@
+# $log | Measure-Object SizeBytes -Sum -Average
+Count    : 80
+Average  : 9767.375
+Sum      : 781390
+Property : SizeBytes
+
+# Bo sung: volume theo sender
+bulk-sender@example.invalid: 720000 bytes (92.1%)
+normal3@example.invalid: 15355 bytes (2.0%)
+normal2@example.invalid: 15350 bytes (2.0%)
+normal1@example.invalid: 15345 bytes (2.0%)
+normal0@example.invalid: 15340 bytes (2.0%)
+
+bulk-sender@example.invalid: 60 thu tu 10:00:00 den 10:01:58 (~31 thu/phut), subject lap lai: '[TRAINING] Thong bao lap lai' x60
