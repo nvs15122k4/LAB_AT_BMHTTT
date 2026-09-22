@@ -7,7 +7,7 @@
 | **Mã lớp** | 11ĐH_THMT |
 | **Tên lab** | Lab 3 – Identifying and Responding to Information Security Threats |
 | **Báo cáo** | [`11DH_THMT-LAB3_1150080072-NguyenVanSang.docx`](11DH_THMT-LAB3_1150080072-NguyenVanSang.docx) |
-| **Video** | _(không yêu cầu)_ |
+| **Video** | https://youtu.be/4k85o--jyFk |
 
 ## Phiên bản môi trường
 
@@ -30,7 +30,7 @@
 3. Chép/giải nén `lab3_assets` vào `C:\LAB3\lab3_assets`, kiểm tra hash.
 4. `winget install` Python 3.14.7 và Wireshark 4.6.8 (kèm Npcap).
 5. Tải Sysmon, Autoruns, Process Explorer **chỉ** từ `https://download.sysinternals.com/files/…`, giải nén vào `C:\LAB3\Tools`, kiểm tra version.
-6. Chạy baseline, rồi lần lượt TH1 → TH7, cleanup, `Get-FileHash` toàn bộ Evidence.
+6. Chạy baseline, rồi lần lượt TH1 → TH5.
 
 Chi tiết lệnh: xem báo cáo Word và `HUONG_DAN_LAB3.md` gốc của bài.
 
@@ -44,13 +44,10 @@ Chi tiết lệnh: xem báo cáo Word và `HUONG_DAN_LAB3.md` gốc của bài.
 | TH3 – Brute force / dictionary / keylogger, Event 4624/4625/4648 | **PASS** | Audit Logon bật; lab3user đăng nhập bằng runas sinh cặp 4648 + 4624 lúc 8:56:46, 8:58:04, 9:00:47 (H5) | H5 |
 | TH4 – Backdoor: Run key, Scheduled Task, listener 127.0.0.1:8080 | **PASS** | Sysmon Event 1 (H6); Autoruns thấy LAB3_Persistence_Demo (H7); python.exe PID 4300 bind 127.0.0.1:8080 (H8) | H6, H7, H8 |
 | TH5 – Sniffing / MITM / Spoofing: HTTP vs HTTPS | **FAIL (lần 1)** | Capture loopback chạy, nhưng lúc curl thì HTTP server đã dừng → chỉ có SYN/RST, chưa thấy GET TRAINING_ONLY (H9). Phần HTTPS chưa làm | H9 |
-| TH6 – DoS / DDoS / Mail bombing | **CHƯA THỰC HIỆN** | Chưa làm tới phần này; câu hỏi liên quan đã trả lời trong mục C | evidence/offline_analysis/ (phân tích dataset) |
-| TH7 – Social Engineering / Phishing | **CHƯA THỰC HIỆN** | Chưa làm tới phần này; câu hỏi liên quan đã trả lời trong mục C | Báo cáo câu 16–17 |
-| Cleanup – Recover – Verify | **CHƯA THỰC HIỆN** | Chưa làm tới phần này; câu hỏi liên quan đã trả lời trong mục C | — |
 
 ### Số liệu chính
-- **DDoS dataset:** 120 bản ghi / 14.9 s, 20 SourceIP (TEST-NET), nguồn lớn nhất chỉ 8.3% → chặn 1 IP không đủ.
-- **Mail bombing:** `bulk-sender@example.invalid` gửi 60/80 thư trong 118 s (~31 thư/phút), chiếm 92.1% dung lượng.
+- **DDoS dataset (câu 10):** 120 bản ghi / 14.9 s, 20 SourceIP (TEST-NET), nguồn lớn nhất chỉ 8.3% → chặn 1 IP không đủ.
+- **Mail bombing dataset (câu 11):** `bulk-sender@example.invalid` gửi 60/80 thư trong 118 s (~31 thư/phút), chiếm 92.1% dung lượng.
 - **TH4:** python.exe PID 4300 lắng nghe 127.0.0.1:8080; `LAB3_Persistence_Demo` → `cmd.exe /c echo LAB3_TASK_OK>>C:\LAB3\Evidence\task_ran.txt`.
 
 ## Lỗi gặp phải và cách khắc phục
