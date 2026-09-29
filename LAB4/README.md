@@ -8,7 +8,7 @@
 | **Tên lab** | Lab 4 – Khảo sát và đánh giá bề mặt mạng bằng Nmap |
 | **Ngày thực hành** | 29/09/2026 |
 | **Báo cáo** | [`11DH_THMT-LAB4_1150080072-NguyenVanSang.docx`](11DH_THMT-LAB4_1150080072-NguyenVanSang.docx) |
-| **Video** | _(không có)_ |
+| **Video** | https://youtu.be/djOdfEZ1oTk |
 
 ## Phiên bản môi trường
 
