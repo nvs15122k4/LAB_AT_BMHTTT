@@ -16,3 +16,4 @@ Bài thực hành môn An toàn và Bảo mật Hệ thống Thông tin.
 Em **không dùng hệ điều hành Windows** trên máy thật. Máy thật chạy **Ubuntu 26.04.1 LTS** với **Oracle VirtualBox 7.2.18**
 (vai trò tương tự VMware Workstation). Các phần đề bài yêu cầu làm trên Windows được thực hiện trong máy ảo Windows 11
 chạy trên VirtualBox.
+| [LAB6](LAB6/) | Xác thực Active Directory và chính sách truy cập trên pfSense |
