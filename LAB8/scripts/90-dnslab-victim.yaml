@@ -1,0 +1,10 @@
+network:
+  version: 2
+  ethernets:
+    enp0s8:
+      addresses: [10.9.0.100/24]
+      nameservers:
+        addresses: [10.9.0.10]
+      routes:
+        - to: 172.16.6.0/24
+          via: 10.9.0.1

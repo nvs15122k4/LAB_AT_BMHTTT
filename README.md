@@ -13,6 +13,7 @@ Bài thực hành môn An toàn và Bảo mật Hệ thống Thông tin.
 | [LAB5](LAB5/) | Cấu hình tường lửa pfSense: WAN/LAN/DMZ, NAT, firewall rule |
 | [LAB6](LAB6/) | Xác thực Active Directory và chính sách truy cập trên pfSense |
 | [LAB7](LAB7/) | Web Protection trên mô hình pfSense + Web Proxy (Squid/E2Guardian/ClamAV) |
+| [LAB8](LAB8/) | Local DNS Attack trên pfSense: DNS Spoofing và Cache Poisoning trong mạng ảo cô lập |
 
 ## Môi trường thực hành
 

@@ -1,0 +1,8 @@
+Nguon chinh thuc
+- Ubuntu Server 24.04: https://ubuntu.com/download/server
+- Ubuntu DNS/BIND9 guide: https://ubuntu.com/server/docs/how-to/networking/install-dns/
+- Kali Linux: https://www.kali.org/get-kali/
+- Wireshark: https://www.wireshark.org/
+- pfSense documentation: https://docs.netgate.com/pfsense/en/latest/
+- VirtualBox networking: https://docs.oracle.com/en/virtualization/virtualbox/7.2/user/networkingdetails.html
+- BIND 9 reference: https://bind9.readthedocs.io/en/stable/

@@ -1,0 +1,6 @@
+﻿Order,Action,Interface,Source,Destination,Protocol/Port,Purpose
+1,Pass,DNSLAB,10.9.0.10,172.16.6.20,UDP/TCP 53,DNS resolver -> simulated authoritative DNS
+2,Pass,DNSLAB,10.9.0.0/24,172.16.6.10,TCP 80,Victim -> legitimate web in DMZ
+3,Block+Log,DNSLAB,10.9.0.0/24,10.6.0.0/24,Any,Protect LAB8 LAN-DOMAIN
+4,Block+Log,DNSLAB,10.9.0.0/24,192.168.56.0/24,Any,Protect MGMT
+5,Block+Log,DNSLAB,10.9.0.0/24,Any,Any,Default isolation for attack phase

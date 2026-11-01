@@ -1,0 +1,5 @@
+network:
+  version: 2
+  ethernets:
+    enp0s8:
+      addresses: [172.16.6.20/24, 172.16.6.10/24]

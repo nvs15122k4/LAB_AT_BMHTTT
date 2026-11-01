@@ -1,0 +1,16 @@
+zone "lab9.test" {
+    type master;
+    file "/etc/bind/db.lab9.test";
+};
+
+zone "9.10.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.10.9.0";
+};
+
+// This name is intentionally forwarded to APP-TEST/AUTH-DNS in DMZ.
+zone "external.lab9.test" {
+    type forward;
+    forward only;
+    forwarders { 172.16.6.20; };
+};
